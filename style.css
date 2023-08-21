@@ -293,3 +293,147 @@ body{
 
     }
 }
+@media (max-width:550px) {
+    body{
+        
+        & > header{
+            background-image: url('./images/mobile/image-hero.jpg');
+            margin-bottom: 2rem;
+            padding: 2rem;
+            width: 100%;
+            & > nav{
+                margin-bottom: 10rem;
+                & > .menu{
+                    display: block;
+                }
+                & > ul{
+                        flex-direction: column;
+                        align-items: start;
+                        padding-left: 2rem;
+                        padding-top: 6rem;
+                        gap: 1.2rem;
+                        width: 100%;
+                        height: 90vh;
+                        background-color: var(--Black);           
+                        position: absolute;
+                        top: 5rem;
+                        left:0;
+                        text-transform: uppercase;
+                        transition: .3s;
+                        visibility: hidden;
+                }
+                & > ul.active{
+                    visibility: visible;
+                }
+            }
+            & > .experience{
+                width: 100%;
+                margin: 0;
+                height: max-content;
+                padding: 1.5rem;
+               & > p{
+                font-size: 2.5rem;
+
+                }
+            }
+        }
+        & > header.active{
+            background-image: none;
+            background-color: var(--Black);
+        }
+        & > .leader{
+            padding: 1rem;
+            margin-bottom: 2rem;
+            flex-direction: column;
+            & > img{
+                display: block;
+            }
+            & > .info{
+                padding: 0;
+                text-align: center;
+                position: initial;
+               transform: translate(0,0);
+               width: 100%;
+               height: max-content;
+               margin-top: 2rem;
+
+               & > h2{
+                font-size: 2rem;
+               }
+            }
+        }
+        & > .creations{
+            position: relative;
+            padding: 1rem;
+            & > .top{
+                padding-left: 1rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                & > .btn{
+                    position: absolute;
+                    bottom: 3%;
+                    width: 60%;
+                    padding: 10px 30px;
+                }
+            }
+
+           & > .images{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            & > .img{
+                padding: 0;
+                max-width: 500px;
+                width: 100%;
+                height: 151px;
+                & > p{
+                    margin: 3rem 2rem 2rem 2rem;
+                    font-size: 2rem;
+                }
+            }
+            & > .img:nth-child(1){
+                background-image: url('./images/mobile/image-deep-earth.jpg');
+            }
+            & > .img:nth-child(2){
+            background-image: url('./images/mobile/image-night-arcade.jpg');
+            }
+            & > .img:nth-child(3){
+            background-image: url('./images/mobile/image-soccer-team.jpg');
+            }
+            & > .img:nth-child(4){
+            background-image: url('./images/mobile/image-grid.jpg');
+            }
+            & > .img:nth-child(5){
+            background-image: url('./images/mobile/image-from-above.jpg');
+            }
+            & > .img:nth-child(6){
+            background-image: url('./images/mobile/image-pocket-borealis.jpg');
+            }
+            & > .img:nth-child(7){
+            background-image: url('./images/mobile/image-curiosity.jpg');
+            }
+            & > .img:nth-child(8){
+            background-image: url('./images/mobile/image-fisheye.jpg');
+            }
+           
+           }
+          
+           
+        }
+
+
+        & > footer{
+            padding:2rem 0;
+            flex-direction: column;
+
+            & > nav, & > .end , & ul{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+    }
+}
